@@ -10,15 +10,15 @@ Il est nécessaire de compléter le fichier `.env` en prenant exemple sur le fic
 
 ### Déploiement 1er partie
 
-Se rendre dans le dossier `./terraform`
-Intialiser la première partie du projet : `terraform init` 
-Déployer cette première partie : `terraform apply -auto-approve`
+* Se rendre dans le dossier `./terraform`
+* Intialiser la première partie du projet : `terraform init` 
+* Déployer cette première partie : `terraform apply -auto-approve`
 
 ### Déploiement 2e partie 
 
-Puis se rendre dans le dossier `docker/`
-Initialiser cette seconde partie du projet : `terraform init`
-Déployer cette partie : `terraform apply -auto-approve` 
+* Puis se rendre dans le dossier `docker/`
+* Initialiser cette seconde partie du projet : `terraform init`
+* Déployer cette partie : `terraform apply -auto-approve` 
 
 ## Explications
 
