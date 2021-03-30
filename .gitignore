@@ -1,3 +1,6 @@
 .env
 terraform/*terraform*
-terraform/docker/*terraform*
+terraform/data_mart_dwh/*terraform*
+terraform/data_mart_dwh/.terraform/
+terraform/etl/*terraform*
+terraform/etl/.terraform
