@@ -1,5 +1,11 @@
 # Big Data MSPR
 
+###WARNING###
+
+DO NOT USE IN PRODUCTION 
+
+###WARNING###
+
 Ce projet permet le déploiement auto de l'infrastructure ETL utilisant la suite [Elastic](https://www.elastic.co/fr/).
 
 Voici le schéma représentatif de l'infrastructure souhaitée. 
@@ -10,7 +16,7 @@ Voici le schéma représentatif de l'infrastructure souhaitée.
 
 ### Etape préliminaire 
 
-* Avoir [terraform](https://terraform.io) intallé sur votre machine
+* Avoir [terraform](https://terraform.io) installé sur votre machine
 * Il est nécessaire de compléter le fichier `.env` en prenant exemple sur le fichier `.env.example`
 
 ### Déploiement 1er partie : création infrastructure matérielle
@@ -35,8 +41,9 @@ Voici le schéma représentatif de l'infrastructure souhaitée.
 
 Le projet se découpe donc en deux parties :
 
-* La première permet de créer le serveur accueillant les services
-* La seconde permet de déployer les services avec Docker
+* La première permet de créer les deux serveurs accueillant les services de l'infrastructure
+* La seconde permet de déployer Kibana et Elastic (Datawarehouse)
+* La troisième permet l'ajout de la base de données Mysql sur le deuxième serveur et de l'ETL (Logstash)
 
 Le serveur kibana est ensuite accessible à l'adresse suivante : `http://etl.fredericpinaud.ovh`
 
